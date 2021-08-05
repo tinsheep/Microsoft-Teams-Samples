@@ -1,7 +1,7 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.9",
-  "version": "1.0.0",
+  "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "version": "2.1.0",
   "id": "8131e3ba-0f19-411e-adad-527960c2fa89",
   "packageName": "com.microsoft.teams.sample.meetingtoken",
 
@@ -28,23 +28,17 @@
       "configurationUrl": "https://myteamsdev.ngrok.io/Home/configure",
       "canUpdateConfiguration": true,
       "scopes": [
-        "groupchat",
-        "team"
+        "groupchat"
       ],
       "meetingSurfaces": [
-        "sidePanel"
+        "sidePanel",
+        "stage"
       ],
       "context": [
-        "meetingSidePanel"
+        "meetingSidePanel",
+        "meetingStage"
       ]
     }
-  ],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
-  "validDomains": [
-    "<<Your_Domain_URL>>"
   ],
   "bots": [
     {
@@ -56,5 +50,19 @@
       "isNotificationOnly": false,
       "supportsFiles": false
     }
-  ]
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "myteamsdev.ngrok.io"
+  ],
+  "webApplicationInfo": {
+    "id": "8131e3ba-0f19-411e-adad-527960c2fa89",
+    "resource": "https://RscPermission",
+    "applicationPermissions": [
+      "OnlineMeeting.ReadBasic.Chat"
+    ]
+  }
 }

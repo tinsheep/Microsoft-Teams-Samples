@@ -34,4 +34,15 @@ namespace SidePanel.Models
         public string id { get; set; }
     }
 
+    //meeting start and end metadata
+    public class MeetingStartEndEventValue
+    {
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public string MeetingType { get; set; }
+        public string JoinUrl { get; set; }
+        public string StartTime { get; set; }
+        public string EndTime { get; set; }
+    }
+
 }
