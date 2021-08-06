@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Manifest - v1.10\" />
     <Folder Include="Service\" />
   </ItemGroup>
 

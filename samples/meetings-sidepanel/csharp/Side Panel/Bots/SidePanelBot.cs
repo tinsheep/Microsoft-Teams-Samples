@@ -61,16 +61,16 @@ namespace Microsoft.BotBuilderSamples.Bots
                 new AdaptiveTextBlock(){Text="Meeting Start/End Values", Weight=AdaptiveTextWeight.Bolder}
             };
 
-            var meetingId = new AdaptiveTextBlock() { Text = "- " + meetingEventInfoObject.Id + " \r" };
+            var meetingId = new AdaptiveTextBlock() { Text = "Meeting Id - " + meetingEventInfoObject.Id + " \r" };
             adaptiveCard.Body.Add(meetingId);
             if (meetingEventName == "application/vnd.microsoft.meetingStart")
             {
-                var startTime = new AdaptiveTextBlock() { Text = "- " + meetingEventInfoObject.StartTime + " \r" };
+                var startTime = new AdaptiveTextBlock() { Text = "Meeting Started - " + meetingEventInfoObject.StartTime + " \r" };
                 adaptiveCard.Body.Add(startTime);
             }
             else
             {
-                var endTime = new AdaptiveTextBlock() { Text = "- " + meetingEventInfoObject.EndTime + " \r" };
+                var endTime = new AdaptiveTextBlock() { Text = "Meeting Ended - " + meetingEventInfoObject.EndTime + " \r" };
                 adaptiveCard.Body.Add(endTime);
             }
 
