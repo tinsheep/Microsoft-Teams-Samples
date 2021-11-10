@@ -128,7 +128,7 @@ namespace SidePanel.Controllers
             if (response.meeting.role == "Organizer")
                 return true;
             else
-                return false;
+                return false;   
         }
 
         public async Task<UserMeetingRoleServiceResponse> GetMeetingRoleAsync(string meetingId, string userId, string tenantId)
