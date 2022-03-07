@@ -1,3 +1,17 @@
+---
+page_type: sample
+description: Microsoft Teams sample app for demonstrating deeplink from Bot chat to Tab consuming Subentity ID
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:27"
+---
+
 # DeepLink
 
 This sample displays how to consume SubEntity Id to [DeepLink](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/deep-links#deep-linking-to-your-tab) from Bot to Tab and Tab to Tab.
@@ -55,6 +69,7 @@ This sample displays how to consume SubEntity Id to [DeepLink](https://docs.micr
 1. Run ngrok - point to port 3978 (This is your Base_URL)
    ```ngrok http -host-header=rewrite 3978```
 1. Create a new Bot by following steps mentioned in [Build a bot](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots?view=msteams-client-js-latest#build--a-bot-for-teams-with-the-microsoft-bot-framework) documentation.
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 1. Go to .env file  and add ```MicrosoftAppId``` ,  ```MicrosoftAppPassword``` and ```Base_URL``` information.
 1. Run your app, either from Visual Studio code  with ``` npm start``` or using ``` Run``` in the Terminal.
 1. Update the manifest.json file with ```Microsoft-App-ID```,```ContentUrl```, ```WebsiteUrl``` and ```EntityID``` value.
@@ -70,3 +85,4 @@ Enter text in the emulator.  The text will be echoed back by the bot.
 ![](https://user-images.githubusercontent.com/50989436/116378517-d5dea680-a82f-11eb-9717-9eeb84942a05.png)
 3. Click on Back to List to view all the options. User can select an option which will redirect to the respective Task in the Tab.
 ![](https://user-images.githubusercontent.com/50989436/116378607-ed1d9400-a82f-11eb-9234-33e307ccf184.png)
+

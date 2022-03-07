@@ -1,4 +1,18 @@
-# Notify Feed App
+---
+page_type: sample
+description: Microsoft Teams sample app for Sending Activity feed notification using Graph API in a Teams Tab.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "06-10-2021 01:48:56"
+---
+
+# Activity Feed Notification
 
 Nodejs Activity Feed sample using Tab.
 
@@ -79,7 +93,7 @@ This sample has been created using [Microsoft Graph](https://docs.microsoft.com/
     Set a redirect URI:
     * Select **Add a platform**.
     * Select **web**.
-    * Enter the **redirect URI** for the app in the following format: `https://{Base_Url}auth/auth-end`. This will be the page where a successful implicit grant flow will redirect the user.
+    * Enter the **redirect URI** for the app in the following format: `https://{Base_Url}/auth-end`. This will be the page where a successful implicit grant flow will redirect the user.
       
 14.  Navigate to the **Certificates & secrets**. In the Client secrets section, click on "+ New client secret". Add a description      (Name of the secret) for the secret and select “Never” for Expires. Click "Add". Once the client secret is created, copy its value, it need to be placed in the .env file.
 
@@ -88,7 +102,7 @@ This sample has been created using [Microsoft Graph](https://docs.microsoft.com/
     - **Zip** up the contents of the `Manifest` folder to create a `manifest.zip`
     - **Upload** the `manifest.zip` to Teams (in the Apps view click "Upload a custom app")
 
-1) Update the `.env` configuration with the ```ClientId``` and ```ClientSecret```
+1) Update the `.env` configuration with the ```ClientId```,  ```ClientSecret``` and ```TenantId```
 
 1) Run your bot at the command line:
 
@@ -100,6 +114,7 @@ This sample has been created using [Microsoft Graph](https://docs.microsoft.com/
 - Install TabActivityFeed manifest in Teams
 - Add Tab in Personal, GroupChat or Team scope
 - Fill the Details in Page and click on Send notification button
+
 ![](Images/GroupChatNotification.png)
 
 ![](Images/TeamsNotification.png)
@@ -109,3 +124,4 @@ This sample has been created using [Microsoft Graph](https://docs.microsoft.com/
 - Notification triggred by Tab App will appear in Teams Activity Feed
 
 ![](Images/ActivityFeedNotification.png)
+

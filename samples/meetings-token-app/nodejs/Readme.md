@@ -1,3 +1,17 @@
+---
+page_type: sample
+description: Microsoft Teams meeting extensibility sample: token passing
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:27"
+---
+
 # Meeting Token Generator
 
 The Meeting Token Generator app is a sample Microsoft Teams app that extends meetings in Teams.
@@ -51,6 +65,7 @@ The app uses the Teams extensibility features described on the following pages:
 ### Step 1: Register Azure AD applications
 1. Start an ngrok session as indicated above. Note the ngrok domain, as you will use this in the registration steps below, where it will be the value of `WebAppDomain`.
 2. Register your bot using bot channel registration in Azure AD portal, following the instructions [here](Wiki/azure-bot-channels-registration.md).
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 3. Update the AAD app registration for tab SSO, following the  instructions [here](Wiki/auth-aad-sso.md). The "fully qualified domain name" in the instructions will be your ngrok domain.
 4. Set up the .env with the following keys:
     - `"BotId"` : Application (Bot) ID of the bot's Azure AD application
@@ -150,3 +165,4 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+

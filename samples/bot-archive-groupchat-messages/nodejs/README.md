@@ -1,3 +1,19 @@
+---
+page_type: sample
+description: Demonstrating on how a bot can archive groupchat messages and send it to user as a file.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "11-10-2021 23:35:25"
+---
+ 
+# Archive groupchat messages
+
 Using this nodejs sample, a bot can archive chat messages of groupchat and send it to user.
 
 This feature shown in this sample is currently available in Public Developer Preview only.
@@ -24,6 +40,10 @@ This feature shown in this sample is currently available in Public Developer Pre
 
 ### 1. Setup for Bot SSO
 In Azure portal, create a [Bot Framework registration resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2).
+
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+- Refer [this](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots) for setting the connection string
+
 
  Add this permission to app registration
 
@@ -57,7 +77,8 @@ In Azure portal, create a [Bot Framework registration resource](https://docs.mic
     npm start
     ```
 - **Manually update the manifest.json**
-    - Edit the `manifest.json` contained in the  `/appPackage` folder to and fill in MicrosoftAppId (that was created in step 1 and it is the same value of MicrosoftAppId as in `.env` file) *everywhere* you see the place holder string `<<YOUR-MICROSOFT-APP-ID>>` (depending on the scenario it may occur multiple times in the `manifest.json`)
+    - Edit the `manifest.json` contained in the  `/appPackage` folder to and fill in MicrosoftAppId (that was created in step 1 and it is the same value of MicrosoftAppId as in `.env` file) *everywhere* you see the place holder string `<<MICROSOFT-APP-ID>>` (depending on the scenario it may occur multiple times in the `manifest.json`)
+    - In the valid domains section of the manifest update your ngrok url `{<<ngrokid>>.ngrok.io}`. 
     - Zip up the contents of the `/appPackage` folder to create a `manifest.zip`
     - Upload the `manifest.zip` to Teams (in the left-bottom *Apps* view, click "Upload a custom app")
 
@@ -68,3 +89,4 @@ In Azure portal, create a [Bot Framework registration resource](https://docs.mic
 Select a groupchat and add the bot to chat.
 
 Send `getchat` message to the bot, you will recieve a consent card by the bot in your personal scope.
+

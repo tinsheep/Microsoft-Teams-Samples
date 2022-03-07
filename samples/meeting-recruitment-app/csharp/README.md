@@ -45,6 +45,8 @@ It has meeting details and in-meeting app that helps in the interview process.
 1) Create a Bot Registration
    In Azure portal, create a [Bot Framework registration resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2#create-the-resource).
 
+   - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+
 2) Create a Azure Storage account(This is needed to store/retrieve data that is used in the app) 
   [Create storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 
@@ -141,6 +143,17 @@ It has meeting details and in-meeting app that helps in the interview process.
 5) Share assets:
    This is used to share assets to the candidate.
    ![Share Assets](MeetingApp/Images/share_assets.png)
+   
+6) Mobile view: Details tab
+   ![Details tab](MeetingApp/Images/details_tab_mobile.png)
+   
+   - Action on Questions:
+   
+   ![Question](MeetingApp/Images/question_mobile.png)
+   
+   - Sidepanel view
+   
+   ![Sidepanel mobile](MeetingApp/Images/sidepanel_mobile.png)
   
 ## Testing the bot using Bot Framework Emulator
 

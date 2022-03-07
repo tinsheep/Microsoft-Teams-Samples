@@ -1,4 +1,20 @@
-﻿Using this Node JS sample, a bot can receive real-time meeting events.
+---
+page_type: sample
+description: Get real time meeting events
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "11-10-2021 17:35:46"
+---
+
+# Realtime meeting events
+
+Using this Node JS sample, a bot can receive real-time meeting events.
 For reference please check [Real-time Teams meeting events](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/api-references?tabs=dotnet)
 
 This feature shown in this sample is currently available in public developer preview only.
@@ -25,6 +41,8 @@ Make sure you've downloaded and installed Ngrok on your local machine. ngrok wil
 
 - Register Azure AD applications
     -   Register your bot using bot channel registration in Azure AD portal, following the instructions [here](Wiki/azure-bot-channels-registration.md).
+
+    - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
     
 - Clone the repository
 

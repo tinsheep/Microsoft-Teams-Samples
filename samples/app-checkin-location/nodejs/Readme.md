@@ -1,4 +1,17 @@
-## Get Checkin info of user
+---
+page_type: sample
+description: Demonstrating feature where user can checkin with current location and view all previous checkins.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "11-11-2021 23:30:17"
+---
+# Get Checkin info of user
 
 This sample shows feature where user can checkin with current location and view all previous checkins.
 
@@ -27,6 +40,7 @@ This sample shows feature where user can checkin with current location and view 
 
 ### 1. Setup for Bot
 In Azure portal, create a [Azure Bot resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2).
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 
 ### 2. Run your bot sample
 1) Clone the repository
@@ -77,3 +91,4 @@ In Azure portal, create a [Azure Bot resource](https://docs.microsoft.com/en-us/
 - `viewcheckindetails` of user.
 
 ![User last checkin card](Images/UserLastCheckInCard.png)
+

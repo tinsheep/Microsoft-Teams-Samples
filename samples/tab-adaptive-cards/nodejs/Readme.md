@@ -1,4 +1,18 @@
-# Tab With AdpativeCard Flow
+---
+page_type: sample
+description: Microsoft Teams tab sample code which demonstrates how to build tabs with Adaptive Cards.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "02-09-2021 19:54:22"
+---
+
+# Tabs with Adaptive Cards
 
 This App talks about the Teams tab which displays Adaptive card with Node JS. For reference please check [Build tabs with Adaptive Cards](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/build-adaptive-card-tabs)
 
@@ -48,6 +62,7 @@ Make sure you've downloaded and installed Ngrok on your local machine. ngrok wil
 
 - Register Azure AD applications
     -   Register your bot using bot channel registration in Azure AD portal, following the instructions [here](Wiki/azure-bot-channels-registration.md).
+    - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
     - For authentication flow please check [Add authentication to bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2)
     
 - Clone the repository
@@ -120,3 +135,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
 - [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Microsoft Teams Developer Platform](https://docs.microsoft.com/en-us/microsoftteams/platform/)
+

@@ -13,7 +13,7 @@ extensions:
   createdDate: "10/1/2021 2:36:57 PM"
 ---
 
-# Meeting Recruitment App Sample
+# Recruitment App Sample using Apps in Meetings
 
 This sample illustrates a meeting experience for recruitment.
 
@@ -34,6 +34,8 @@ It has meeting details and in-meeting app that helps in the interview process.
 
 ## To try this sample
 1) Create a Bot Registration in Azure portal. [Bot Framework registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2#create-the-resource)
+
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
     
 2) Create a Azure Storage account(This is needed to store/retrieve data that's used in the app) 
   [Create storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
@@ -130,6 +132,18 @@ It has meeting details and in-meeting app that helps in the interview process.
    This is used to share assets to the candidate.
    
    ![Share Assets](Images/share_assets.png)
+
+6) Mobile view: Details tab
+
+   ![Details tab](Images/details_tab_mobile.png)
+   
+   - Action on Questions:
+   
+   ![Question](Images/question_mobile.png)
+   
+   - Sidepanel view
+   
+   ![Sidepanel mobile](Images/sidepanel_mobile.png)
 
 ## Testing the bot using Bot Framework Emulator
 

@@ -1,3 +1,19 @@
+---
+page_type: sample
+description: Get real time meeting events
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "11-10-2021 17:35:46"
+---
+
+# Realtime meeting events
+
 Using this C# sample, a bot can receive real-time meeting events.
 For reference please check [Real-time Teams meeting events](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/api-references?tabs=dotnet)
 
@@ -22,6 +38,8 @@ The feature shown in this sample is currently available in public developer prev
 
 1. Create a Bot Registration
    In Azure portal, create a [Bot Framework registration resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2#create-the-resource).
+
+   - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 
 2. Clone the repository
 
@@ -90,3 +108,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
 - [Azure Portal](https://portal.azure.com)
 - [Language Understanding using LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
 - [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
+

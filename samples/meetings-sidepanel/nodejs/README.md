@@ -1,4 +1,18 @@
-# SidePanel Sample
+---
+page_type: sample
+description: Microsoft Teams meeting extensibility sample for iteracting with Side Panel in-meeting
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:27"
+---
+
+# Meetings SidePanel
 
 This sample illustrates how to implement [Side Panel](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/create-apps-for-teams-meetings?view=msteams-client-js-latest&tabs=dotnet#notificationsignal-api) In-Meeting Experience.
 
@@ -25,6 +39,11 @@ This sample illustrates how to implement [Side Panel](https://docs.microsoft.com
     ngrok http -host-header=localhost 3978
     ```
 - [Teams](https://teams.microsoft.com) Microsoft Teams is installed and you have an account
+
+- Register a bot with Azure Bot Service, following the instructions [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+- While registering the bot, use `https://<your_ngrok_url>/api/messages` as the messaging endpoint.
+    > NOTE: When you create your bot you will create an App ID and App password - make sure you keep these for later.
 
 1. Clone the repository
       ```bash
@@ -70,3 +89,4 @@ Interact with SidePanel by clicking on the App icon present on the top menu besi
 2. On click of "Add" button, agenda point will be added to the agenda list by organizer.![](https://user-images.githubusercontent.com/50989436/118760002-ad2a5980-b88f-11eb-821d-3a1f74d9fa71.png)![](https://user-images.githubusercontent.com/50989436/118759709-28d7d680-b88f-11eb-9aa7-a6b67daa639c.png)
 
 3. On click of "Publish Agenda", the agenda list will be sent to the meeting chat.![](https://user-images.githubusercontent.com/50989436/118759762-3e4d0080-b88f-11eb-8880-b0ed3739cbe0.png)
+

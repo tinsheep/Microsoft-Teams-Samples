@@ -1,7 +1,25 @@
-﻿This App talks about the Teams tab which displays Adaptive card with CSharp.
+---
+page_type: sample
+description: Microsoft Teams tab sample code which demonstrates how to build tabs with Adaptive Cards.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "06-10-2021 01:48:56"
+---
+
+# Tabs with Adaptive Cards
+
+This App talks about the Teams tab which displays Adaptive card with CSharp.
 For reference please check [Build tabs with Adaptive Cards](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/build-adaptive-card-tabs)
 
 This feature shown in this sample is in Public Developer Preview and is supported in desktop and mobile.
+
+![Adaptive Card](TabWithAdpativeCardFlow/Images/TabAdaptiveCardFlow.png)
 
 ## Prerequisites
 
@@ -23,6 +41,8 @@ This feature shown in this sample is in Public Developer Preview and is supporte
 
 2. Create a Bot Registration
    In Azure portal, create a [Bot Framework registration resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2).
+
+   - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 
 3. Modify the `manifest.json` in the `/AppPackage` folder and replace the `{{BOT-ID}}` with the id from step 2.
 
@@ -100,3 +120,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
 - [Azure Portal](https://portal.azure.com)
 - [Language Understanding using LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
 - [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
+

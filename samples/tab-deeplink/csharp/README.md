@@ -1,4 +1,18 @@
-﻿# DeepLink Sample
+---
+page_type: sample
+description: Microsoft Teams sample app for demonstrating deeplink from Bot chat to Tab consuming Subentity ID
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:27"
+---
+
+# DeepLink
 
 This sample displays how to consume SubEntity Id to DeepLink from Bot to Tab and Tab to Tab.
 
@@ -31,6 +45,7 @@ This sample displays how to consume SubEntity Id to DeepLink from Bot to Tab and
 3. Run ngrok - point to port 3978
    ```ngrok http -host-header=rewrite 3978```
 4. Create a new Bot by following steps mentioned in [Build a bot](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots?view=msteams-client-js-latest#build--a-bot-for-teams-with-the-microsoft-bot-framework) documentation.
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 5. Go to appsettings.json and add ```MicrosoftAppId``` and  ```MicrosoftAppPassword``` information.
 6. Update DeepLink Urls with ```MicrosoftAppID``` and  ```EntityID``` with respective values in DeepLinkHelper class and HomeController.
 7. Run your app, either from Visual Studio with ```F5``` or using ```dotnet run``` in the appropriate folder.
@@ -46,3 +61,4 @@ This sample displays how to consume SubEntity Id to DeepLink from Bot to Tab and
 **Channel Tab:**
 ![image](https://user-images.githubusercontent.com/50989436/115546556-ce188280-a2c2-11eb-95cc-b880f4b89cd2.png)
 1. Click on Back to List to view all the options. User can select an option which will redirect to the respective Task in static tab/ channel tab.
+

@@ -1,4 +1,18 @@
-﻿# Region Selection App
+﻿---
+page_type: sample
+description: Microsoft Teams app show end user region selection using Bot and Tab
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "19-03-2021 13:38:25"
+---
+
+# Region Selection App
 
 Bot Framework v4 Region Selection sample.
 
@@ -14,6 +28,11 @@ This bot has been created using [Bot Framework](https://dev.botframework.com), f
   ```
 
 ## To try this sample
+
+- Register a bot with Azure Bot Service, following the instructions [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+- While registering the bot, use `https://<your_ngrok_url>/api/messages` as the messaging endpoint.
+    > NOTE: When you create your bot you will create an App ID and App password - make sure you keep these for later.
 
 - Clone the repository
 

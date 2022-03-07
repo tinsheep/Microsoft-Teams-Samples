@@ -25,6 +25,17 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |12|Teams tab graph toolkit | This sample demos building teams tab using microsoft graph toolkit|[View](/demo%20manifest/Teams-tab-graph-toolkit.zip)     |
 |13| Product inspection | Demonstrating a feature where user can scan a product and mark it as approved/rejected. |[View](/demo%20manifest/Tab-Product-Inspection.zip)     |
 |14| Bot with SharePoint file to view in Teams file viewer| This sample demos a bot with capability to upload files to SharePoint site and same files can be viewed in Teams file viewer.|[View](/demo%20manifest/Bot-SharePoint-File-Viewer.zip)     |
+|15|Bot daily task reminder | This sample demos a feature where user can schedule a recurring task and get a reminder on the scheduled time|[View](/demo%20manifest/Bot-Daily-Task-Reminder.zip)     |
+|16| Message reminder setup through messaging extension | This sample demos a feature where user can schedule a task from messaging extension action command and get a reminder card at scheduled date and time.|[View](/demo%20manifest/Message-Reminder-Messaging-extension.zip)     |
+|17| Task approval using activity feed notification|Demonstrating a feature where user can raise the requests and manager will be notified about the requests and manager will be redirected to approve/reject the request from received notification.|[View](/demo%20manifest/Tab-Request-Approval.zip)     |
+|18|Bot request approval|Demonstrating a feature where user can send task request to his manager using universal adaptive card and manager can approve/reject the request.|[View](/demo%20manifest/Bot-Request-Approval.zip) |
+|19|Incoming Webhook|This sample is used to send card using incoming webhook.|[View](/demo%20manifest/Incoming-Webhook.zip) |
+|20|People picker control in Adaptive Cards | This sample shows the feature of people picker control in Adaptive Cards.|[View](/demo%20manifest/People-Picker-Adaptive-Card.zip) |
+|21|App complete auth|This sample demos authentication feature in bot,tab and messaging extension.|[View](/demo%20manifest/App-Complete-Auth.zip) |
+## [Samples built using new generation of Teams development tool - Teams Toolkit](https://github.com/OfficeDev/TeamsFx-Samples)
+
+The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) is an extension on Visual Studio Code and Visual Studio. It enable Teams developers to create and deploy Teams apps with integrated identity, access to cloud storage, data from Microsoft Graph, and other services in Azure and M365 with a "zero-configuration" approach to the developer experience. And [Sample Apps](https://github.com/OfficeDev/TeamsFx-Samples) are provided in Teams Toolkit. Download and try it by today! [Learn more about Teams Toolkit](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-overview).
+
 
 ## [Getting Started - Samples and Tutorials](https://docs.microsoft.com/microsoftteams/platform/tutorials/get-started-dotnet-app-studio)
 
@@ -47,10 +58,11 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |10|Deep Link consuming Subentity ID      | Microsoft Teams sample app for demonstrating deeplink from Bot chat to Tab consuming Subentity ID | [View][tab-deeplink#csharp]                       | | [View][tab-deeplink#nodejs]|
 |11|Integrate graph toolkit component in teams tab      | Microsoft Teams tab sample app for demonstrating graph toolkit component |[View][tab-graph-toolkit#csharp]|[View][tab-graph-toolkit#js]|
 |12|Device permissions      | Microsoft Teams tab sample app for demonstrating device permissions |                      | [View][tab-device-permissions#js]|
-|13|Build tabs with Adaptive Cards | Microsoft Teams tab sample code which demonstrates how to [Build tabs with Adaptive Cards](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/build-adaptive-card-tabs) | [View][tab-adaptive-cards#csharp]               |                | [View][tab-adaptive-cards#js]|
+|13|Build tabs with Adaptive Cards | Microsoft Teams tab sample code which demonstrates how to [Build tabs with Adaptive Cards](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/build-adaptive-card-tabs) | [View][tab-adaptive-cards#csharp]|| [View][tab-adaptive-cards#js]|
 |14|Tab in stage view   | Microsoft Teams tab sample app for demonstrating tab in stage view |[View][tab-stage-view#csharp] |          | [View][tab-stage-view#js] |
 |15|Create Conversational tab     | Microsoft Teams tab sample app for demonstrating create conversation tab | [View][tab-conversation#csharp]          |           |[View][tab-conversation#nodejs]
 |16| Product inspection | Demonstrating a feature where user can scan a product and mark it as approved/rejected. |[View][tab-product-inspection#csharp]|[View][productinspection#nodejs]|
+|17| Staggered Permission | This sample demos to get staggered graph api permissions. |[View][tab-staggered-permission#csharp]|[View][tab-staggered-permission#nodejs]|
 
 ## [Bots samples](https://docs.microsoft.com/microsoftteams/platform/bots/what-are-bots) (using the v4 SDK)
 >NOTE:
@@ -70,6 +82,10 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |10| Sequential workflow adaptive cards | Demonstrating on how to implement sequential flow, user specific view and upto date adaptive cards in bot. | [View][sequential#workflow#csharp] | [View][sequential#workflow#js]
 |11| Channel messages with RSC permissions | Demonstrating on how a bot can receive all channel messages with RSC without @mention. | [View][messageswithrsc#csharp] |[View][messageswithrsc#js]
 |12| Bot with SharePoint file to view in Teams file viewer | This sample demos a bot with capability to upload files to SharePoint site and same files can be viewed in Teams file viewer. |[View][botwithsharepointfileviewer#csharp]|[View][botfileviewer#js]
+|13|  Type ahead search control on Adaptive Cards | This sample shows the feature of type ahead search (static and dynamic) control in Adaptive Cards. |[View][typeaheadsearch#csharp]|[View][typeaheadsearchonadaptivecard#js]
+|14|  People picker control in Adaptive Cards | This sample shows the feature of people picker control in Adaptive Cards. |[View][peoplepickeronadaptivecard#csharp]|[View][peoplepickeronadaptivecard#js]
+|15|  Proactive Messaging sample | This sample shows how to save user's conversation reference information to send proactive reminder message using Bots. This uses Teams toolkit for Visual Stuido Code to provide scafolding experience. ||[View][bot-proactive-msg-teamsfx#js]
+
 #### Additional samples
 
 |    | Sample Name | Description | .NET Core | JavaScript | 
@@ -98,7 +114,7 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |    | Sample Name | Description | .NET Core | JavaScript | Python |
 |:--:|:-------------------|:---------------------------------------------------------------------------------|:--------|:-------------|:-------------|
 |1|Link unfurling demo of Reddit        | Messaging Extension with Link Unfurling Samples for Reddit Links                              |[View][msgext-link-unfurl#cs]        |
-
+|2|Link unfurling - setup a meeting     | This sample illustrates a common scenario where a user shares a link to a resource with a group of users, and they collaborate to review it in a meeting.                              |[View][msgext-link-unfurl-meeting#cs]        |
 
 ## [Webhooks and Connectors samples](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
 
@@ -108,6 +124,7 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |2|Generic connectors sample | Sample code for a generic connector that's easy to customize for any system which supports webhooks.   |    |[View][connector-generic#ts]
 |3|Outgoing Webhooks      | Samples to create "Custom Bots" to be used in Microsoft Teams.                                        |[View][outgoing-webhook#cs]|[View][outgoing-webhook#ts]
 |4|Authentication in todo Connector App      | This is a sample app which shows connector authentication and sends notification on task creation.                                        ||[View][auth-in-connector#nodejs] 
+|5|Incoming Webhook      | This is a sample  used to send card using incoming webhook.                                        |[View][incoming-webhook#cs]       |[View][incoming-webhook#nodejs]
 
 ## [Graph APIs](https://docs.microsoft.com/graph/teams-concept-overview)
 
@@ -128,7 +145,7 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 
 |    | Sample Name       | Description                                                                      | C#    |
 |:--:|:------------------|:---------------------------------------------------------------------------------------------------|:--------|
-|1|Calling and Meeting bot          | This sample app demonstarte how an Bot can create a call, join a meeting and transfer the call |[View][bot-calling-meeting#csharp]     |
+|1|Calling and Meeting bot          | This sample app demonstrate how a Bot can create a call, join a meeting and transfer the call |[View][bot-calling-meeting#csharp]     |
 |2|Local Media Samples        |Local media samples give the developer direct access to the inbound and outbound media streams.                      |[View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples) | 
 |3|Remote Media Samples      | The Incident Bot sample is a Remote Media sample demonstrating a simple incident process workflow started by a Calling Bot..                                      |[View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples)       |
 
@@ -153,6 +170,14 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |14| App Installtion  using QR code |This sample demos app installation using QR code of application's app id | [View][qrappinstallation#csharp] | [View][qrappinstallation#nodejs]
 |15| Archive groupchat messages | Demonstrating on how a bot can archive groupchat messages and send it to user as a file. | [View][fetchgroupchatmessages#csharp] |[View][fetchgroupchatmessages#nodejs]|
 |16| App check in location | Demonstrating feature where user can checkin with current location and view all previous checkins. | [View][appcheckinlocation#csharp] |[View][checkinlocation#nodejs]|
+|17| Message reminder setup through messaging extension | Demonstrating a feature where user can schedule a task from messaging extension action command and get a reminder card at a scheduled time |[View][memessagereminder#csharp]|[View][msgext-message-reminder#nodejs]|
+|18| Bot daily task reminder | This sample demos a feature where user can schedule a recurring task and get a reminder on the scheduled time |[View][botdailytaskreminder#csharp] |[View][bottaskreminder#nodejs]|
+|19| Tab request approval | Demonstrating a feature where user can raise the requests and manager will be notified about the requests and manager will be redirected to approve/reject the request from received notification. |[View][tab-request-approval#csharp]|[View][tab-request-approval#nodejs]|
+|20| Bot request approval | Demonstrating a feature where user can send task request to his manager using universal adaptive card and manager can approve/reject the request. |[View][bot-request-approval#csharp]|[View][bot-request-approval#nodejs]|
+|21| Join the Team using QR code |This sample demos a feature where user can join a team using QR code containing the team's id. |[View][qrjointeam#csharp]|[View][qrjointeam#nodejs]
+|22| Activity feed broadcast |Demonstrating a feature to notify any message to all members of the organisation using activity feed notification .|[View][graph-activity-feed-broadcast#csharp]|[View][graph-activity-feed-broadcast#js]|
+|23|App complete auth|This sample demos authentication feature in bot,tab and messaging extension.|[View][app-complete-auth#cs]|
+|24|App identity linking with sso|This sample demos mapping with aad id, facebook, and google account of user in bot, ME and tab.||[View][app-identity-link-with-sso#nodejs]|
 
 [app-hello-world#cs]:samples/app-hello-world/csharp
 [app-hello-world#ts]:samples/app-hello-world/nodejs
@@ -175,6 +200,7 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [tab-graph-toolkit#csharp]:samples/tab-graph-toolkit/csharp
 [tab-device-permissions#js]:samples/tab-device-permissions/nodejs
 [tab-conversation#csharp]:samples/tab-conversations/csharp
+[app-complete-auth#cs]:samples/app-complete-auth/csharp
 
 [tab-conversation#nodejs]:samples/tab-conversations/nodejs
 [tab-adaptive-cards#csharp]:samples/tab-adaptive-cards/csharp
@@ -182,19 +208,25 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [tab-stage-view#js]:samples/tab-stage-view/nodejs
 [tab-stage-view#csharp]:samples/tab-stage-view/csharp
 [tab-product-inspection#csharp]:samples/tab-product-inspection/csharp
+[tab-staggered-permission#csharp]:samples/tab-staggered-permission/csharp
+[tab-request-approval#nodejs]:samples/tab-request-approval/nodejs
+[bot-request-approval#nodejs]:samples/bot-request-approval/nodejs
 
 [group-channel-tab#cs#razor]:samples/tab-channel-group/razor-csharp
 [group-channel-tab#cs#mvc]:samples/tab-channel-group/mvc-csharp
 [group-channel-tab#ts#spfx]:samples/tab-channel-group/spfx
 
 [connector#cs]:samples/connector-todo-notification/csharp
+[incoming-webhook#cs]:samples/incoming-webhook/csharp
 [connector#ts]:samples/connector-github-notification/nodejs
 [connector-generic#ts]:samples/connector-generic/nodejs
 [sequential#workflow#csharp]:samples/bot-sequential-flow-adaptive-cards/csharp
 [sequential#workflow#js]:samples/bot-sequential-flow-adaptive-cards/nodejs
 [app-auth#ts]:samples/app-auth/nodejs
 [auth-in-connector#nodejs]:samples/connector-todo-notification/nodejs
-[botwithsharepointfileviewer#csharp]:sample/bot-sharepoint-file-viewer/csharp
+[botwithsharepointfileviewer#csharp]:samples/bot-sharepoint-file-viewer/csharp
+[typeaheadsearch#csharp]:samples/bot-type-ahead-search-adaptive-cards/csharp
+[graph-activity-feed-broadcast#csharp]:samples/graph-activity-feed-broadcast/csharp
 
 [app-task-module#cs]:samples/app-task-module/csharp
 [app-task-module#ts]:samples/app-task-module/nodejs
@@ -206,6 +238,7 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [outgoing-webhook#ts]:samples/outgoing-webhook/nodejs
 
 [msgext-link-unfurl#cs]:samples/msgext-link-unfurling-reddit/csharp
+[msgext-link-unfurl-meeting#cs]:samples/msgext-link-unfurling-meeting/csharp
 [msgext-action-quickstart#js]:samples/msgext-action-quickstart/js
 [msgext-search-quickstart#js]:samples/msgext-search-quickstart/js
 [msgext-search-sso-config#js]:samples/msgext-search-sso-config
@@ -214,7 +247,9 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [tab-sso#cs]:samples/tab-sso/csharp
 
 [app-virtual-assistant#cs]:samples/app-virtual-assistant/csharp
+[identity-linking-with-sso#cs]:samples/app-identity-linking-with-sso/csharp
 [bot-proactive-msg#cs]:samples/bot-proactive-messaging/csharp
+[bot-proactive-msg-teamsfx#js]:samples/bot-proactive-messaging-teamsfx/nodejs
 [bot-conversation-quickstart#js]:samples/bot-conversation-quickstart/js
 [bot-conversation-sso-quickstart#js]:samples/bot-conversation-sso-quickstart/js
 [bot-sharepoint-list#cs]:samples/bot-sharepoint-list/csharp
@@ -237,6 +272,13 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [appcheckinlocation#csharp]:samples/app-checkin-location/csharp
 [checkinlocation#nodejs]:samples/app-checkin-location/nodejs
 [productinspection#nodejs]:samples/tab-product-inspection/nodejs
+[msgext-message-reminder#nodejs]:samples/msgext-message-reminder/nodejs
+[botdailytaskreminder#csharp]:samples/bot-daily-task-reminder/csharp
+[bottaskreminder#nodejs]:samples/bot-daily-task-reminder/nodejs
+[memessagereminder#csharp]:samples/msgext-message-reminder/csharp
+[tab-request-approval#csharp]:samples/tab-request-approval/csharp
+[bot-request-approval#csharp]:samples/bot-request-approval/csharp
+[typeaheadsearchonadaptivecard#js]:samples/bot-type-ahead-search-adaptive-cards/nodejs
 
 [app-localization#cs]:samples/app-localization/csharp
 [app-localization#js]:samples/app-localization/nodejs
@@ -252,6 +294,9 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [meeting-recruitment-app#js]:samples/meeting-recruitment-app/nodejs
 [qrappinstallation#csharp]:samples/app-installation-using-qr-code/csharp
 [qrappinstallation#nodejs]:samples/app-installation-using-qr-code/nodejs
+[qrjointeam#csharp]:samples/bot-join-team-using-qr-code/csharp
+[qrjointeam#nodejs]:samples/bot-join-team-using-qr-code/nodejs
+[incoming-webhook#nodejs]:samples/incoming-webhook/nodejs
 
 [graph#rsc#cs]:samples/graph-rsc/csharp
 [graph#rsc#js]:samples/graph-rsc/nodeJs
@@ -270,7 +315,11 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 [graph-activity-feed#js]:samples/graph-activity-feed/nodejs
 [graph-change-notification#cs]:samples/graph-change-notification/csharp
 [graph-change-notification#js]:samples/graph-change-notification/nodejs
-
+[peoplepickeronadaptivecard#js]:samples/bot-people-picker-adaptive-card/nodejs
+[peoplepickeronadaptivecard#csharp]:samples/bot-people-picker-adaptive-card/csharp
+[graph-activity-feed-broadcast#js]:samples/graph-activity-feed-broadcast/nodejs
+[app-identity-link-with-sso#nodejs]:samples/app-identity-link-with-sso/nodejs
+[tab-staggered-permission#nodejs]:samples/tab-staggered-permission/nodejs
 [botframework]:https://github.com/microsoft/BotBuilder-Samples#teams-samples
 
 ## Submitting issues

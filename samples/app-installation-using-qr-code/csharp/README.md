@@ -1,5 +1,18 @@
-﻿﻿﻿
-## Install app using barcode sample
+---
+page_type: sample
+description: This sample demos app installation using QR code of application's app id
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "11-10-2021 23:35:25"
+---
+
+# Install app using barcode sample
 
 This sample demos app installation using QR code.
 
@@ -33,6 +46,8 @@ The user can Generate a new QR code (contains app id information) and then use I
 
 1) Create a Bot Registration
    In Azure portal, create a [Bot Framework registration resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2).
+
+   - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
    
    Also add following permission in app registration. (used for App installation in a team)
    
@@ -122,3 +137,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
 - [Azure Portal](https://portal.azure.com)
 - [Language Understanding using LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
 - [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
+

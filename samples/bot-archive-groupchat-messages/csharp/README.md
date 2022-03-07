@@ -1,4 +1,20 @@
-﻿﻿﻿Using this C# sample, a bot can archive chat messages of groupchat and send it to user.
+---
+page_type: sample
+description: Demonstrating on how a bot can archive groupchat messages and send it to user as a file.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "11-10-2021 23:35:25"
+---
+
+# Archive groupchat messages
+
+Using this C# sample, a bot can archive chat messages of groupchat and send it to user.
 
 This feature shown in this sample is currently available in Public Developer Preview only.
 
@@ -39,17 +55,22 @@ This feature shown in this sample is currently available in Public Developer Pre
 4. Create a Bot Registration
    In Azure portal, create a [Bot Framework registration resource](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp%2Caadv2).
 
+   - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+   - Refer [this](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots) for setting the connection string
+
    Add this permission to app registration
 
 ![Permissions](FetchGroupChatMessages/Images/permissions.png)
 
-5. Modify the `manifest.json` in the `/AppManifest` folder and replace the `<<YOUR-MICROSOFT-APP-ID>>` with the id from step 2.
+5. Modify the `manifest.json` in the `/AppManifest` folder and replace the `<<MICROSOFT-APP-ID>>` with the id from step 4 `(Azure AAD Id)`.
 
-6. Zip the contents of `AppManifest` folder into a `manifest.zip`, and use the `manifest.zip` to deploy in app store or add to Teams as in step 6.
+6. Zip the contents of `AppManifest` folder into a `manifest.zip`, and use the `manifest.zip` to deploy in app store or add to Teams.
 
-7. Modify the `/appsettings.json` and fill in the `{{ Bot Id }}`,`{{ Bot Password }}` and `{{ Connection Name }}` with the id from step 2.
+7. Modify the `/appsettings.json` and fill in the `{{ MICROSOFT-APP-ID }}`,`{{ MICROSOFT-APP-PASSWORD }}` and `{{ Connection Name }}` with the id from step 4.
 
-8. Upload the manifest.zip to Teams (in the Apps view click "Upload a custom app")
+8. In the valid domains section of the manifest update your ngrok url `{<<ngrokid>>.ngrok.io}`. 
+
+9. Upload the manifest.zip to Teams (in the Apps view click "Upload a custom app")
    - Go to Microsoft Teams. From the lower left corner, select Apps
    - From the lower left corner, choose Upload a custom App
    - Go to your project directory, the ./appPackage folder, select the zip folder, and choose Open.
@@ -91,3 +112,4 @@ Send `getchat` message to the bot, you will recieve a consent card by the bot in
 ## Deploy the bot to Azure
 
 To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
+

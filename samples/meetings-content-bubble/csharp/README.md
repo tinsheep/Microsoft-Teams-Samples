@@ -1,4 +1,19 @@
-# ContentBubbleSample
+---
+page_type: sample
+description: Microsoft Teams meeting extensibility sample for iteracting with Content Bubble Bot in-meeting
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:26"
+---
+
+# Meetings Content Bubble
+
 This sample illustrates how to implement [Content Bubble](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/create-apps-for-teams-meetings?view=msteams-client-js-latest&tabs=dotnet#notificationsignal-api) In-Meeting Experience.
 
 ## Prerequisites
@@ -25,6 +40,9 @@ This sample illustrates how to implement [Content Bubble](https://docs.microsoft
     ngrok http -host-header=rewrite 3978
     ```
 1) Create a new Bot by following steps mentioned in [Build a bot](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots?view=msteams-client-js-latest#build--a-bot-for-teams-with-the-microsoft-bot-framework) documentation.
+
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+
 1) Go to appsettings.json and add `MicrosoftAppId`, `MicrosoftAppPassword` and `BaseUrl` information.
 1) Run your app, either from Visual Studio with `F5` or using `dotnet run` in the appropriate folder. 
 1) Update the manifest.json file with MICROSOFT-APP-ID value.
@@ -36,3 +54,4 @@ Message the Bot by @ mentioning to interact with the content bubble.
 1. You will see agenda items listed in an Adaptive Card.
 1. Select any option and click on Push Agenda button
 1. You can submit your feedback on either Content Bubble/Adaptive card sent in chat.
+

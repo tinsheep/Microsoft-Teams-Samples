@@ -1,4 +1,20 @@
-﻿Using this Node JS sample, a bot can receive all channel messages with RSC without @mention.
+---
+page_type: sample
+description: Demonstrating on how a bot can receive all channel messages with RSC without @mention.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "06-10-2021 01:48:56"
+---
+
+# Receive Channel messages with RSC permissions
+
+Using this Node JS sample, a bot can receive all channel messages with RSC without @mention.
 For reference please check [Receive Channel messages with RSC](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/conversations/channel-messages-with-rsc)
 
 This feature shown in this sample is currently available in Public Developer Preview only.
@@ -29,6 +45,8 @@ Make sure you've downloaded and installed Ngrok on your local machine. ngrok wil
 
 - Register Azure AD applications
     -   Register your bot using bot channel registration in Azure AD portal, following the instructions [here](Wiki/azure-bot-channels-registration.md).
+
+   - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
     
 - Clone the repository
 

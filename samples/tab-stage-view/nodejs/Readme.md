@@ -1,4 +1,20 @@
-﻿This App talks about the Teams tab in stage view with Nodejs.
+---
+page_type: sample
+description: Microsoft Teams tab sample app for demonstrating tab in stage view
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "06-10-2021 01:48:56"
+---
+
+# Meetings Stage View
+
+This App talks about the Teams tab in stage view with Nodejs.
 For reference please check [Tabs link unfurling and Stage View](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/tabs-link-unfurling)
 
 This feature shown in this sample is in Public Developer Preview.
@@ -101,6 +117,7 @@ You can use this tab by following the below steps:
 ## Deploy the bot to Azure
 
 To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 
 ## Further reading
 

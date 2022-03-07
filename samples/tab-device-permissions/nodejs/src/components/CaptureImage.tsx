@@ -19,27 +19,25 @@ const CaptureImage = () => {
   })
 
   // Method to validate before capturing media
-  function captureImage() {
-    // Method to ask for image capture permission and then capture image 
-    microsoftTeams.media.captureImage((error: microsoftTeams.SdkError, files: microsoftTeams.media.File[]) => {
-      // If there's any error, an alert shows the error message/code
-      if (error) {
-        if (error.message) {
-          alert(" ErrorCode: " + error.errorCode + error.message);
-        } else {
-          alert(" ErrorCode: " + error.errorCode);
-        }
-      } else if (files) {
-        setCapturedImage(files[0].content);
-      }
-    });
-  }
-
-  // Method to validate before capturing media
-  function captureMultipleImages() {
+  function captureMultipleImages(mediaCount: number) {
     // Method to ask for image capture permission and then select media
-    // maxMediaCount is the total no. of media that can be attached
-    microsoftTeams.media.selectMedia({ maxMediaCount: 2, mediaType: microsoftTeams.media.MediaType.Image }, (error: microsoftTeams.SdkError, attachments: microsoftTeams.media.Media[]) => {
+
+    let imageProp: microsoftTeams.media.ImageProps = {
+      sources: [microsoftTeams.media.Source.Camera, microsoftTeams.media.Source.Gallery],
+      startMode: microsoftTeams.media.CameraStartMode.Photo,
+      ink: false,
+      cameraSwitcher: false,
+      textSticker: false,
+      enableFilter: true,
+    };
+
+    let mediaInput: microsoftTeams.media.MediaInputs = {
+      mediaType: microsoftTeams.media.MediaType.Image,
+      maxMediaCount: mediaCount,
+      imageProps: imageProp
+    };
+
+    microsoftTeams.media.selectMedia(mediaInput, (error: microsoftTeams.SdkError, attachments: microsoftTeams.media.Media[]) => {
       // If there's any error, an alert shows the error message/code
       if (error) {
         if (error.message) {
@@ -76,12 +74,12 @@ const CaptureImage = () => {
       {/* Card for capturing single image */}
       <Card>
         <CardHeader>
-          <Text content="Capture Image (Mobile Only)" weight="bold" />
+          <Text content="Capture Image" weight="bold" />
         </CardHeader>
         <CardBody>
           <Flex column gap="gap.small">
-            <Text content="Checks for permission before capturing image" />
-            <Button content="Capture Image" onClick={captureImage} />
+            <Text content="Checks for permission before capturing image." />
+            <Button content="Capture Image" onClick={() => captureMultipleImages(1)} />
           </Flex>
         </CardBody>
         {capturedImage !== '' &&
@@ -101,8 +99,7 @@ const CaptureImage = () => {
         </CardHeader>
         <CardBody>
           <Flex column gap="gap.small">
-            <Text content="Checks for permission before capturing image. You can capture multiple images or select them grom gallery." />
-            <Button content="Capture multiple images" onClick={captureMultipleImages} />
+            <Button content="Capture multiple images" onClick={() => captureMultipleImages(2)} />
           </Flex>
           {capturedImages.length !== 0 &&
             <Carousel

@@ -1,4 +1,17 @@
-﻿# Calling and Meeting Bot Sample V4
+---
+page_type: sample
+description: This sample app demonstarte how an Bot can create a call, join a meeting and transfer the call
+products:
+- office-teams
+- office
+- office-365
+languages:
+- csharp
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:25"
+---
+# Calling and Meeting Bot Sample V4
 
 ## Summary
 
@@ -45,6 +58,10 @@ Calling and Meeting Bot provides basic functionality like Create Call, Join a ca
 * [Register an App](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) in Azure using demo tenant 
 * Create `client_secret` for your app
 * Copy `client_Id` `client_secret` for your app in Notepad.
+ - Register a bot with Azure Bot Service, following the instructions [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+- While registering the bot, use `https://<your_ngrok_url>/api/messages` as the messaging endpoint.
+
 * Create a policy for a demo tenant user for creating the online meeting on behalf of that user using the following powershell script
 
 ```
@@ -154,4 +171,5 @@ Calling and Meeting Bot provides basic functionality like Create Call, Join a ca
 ## Further reading
 - [Register a calling Bot](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/calls-and-meetings/registering-calling-bot#create-new-bot-or-add-calling-capabilities)
 - [Cloud Communications API](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0)
+
 

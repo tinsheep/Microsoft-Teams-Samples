@@ -1,4 +1,18 @@
-﻿### Change Notification sample
+---
+page_type: sample
+description: This sample app demonstrates sending change notifications to user presence in Teams based on user presence status.
+products:
+- office-teams
+- office
+- office-365
+languages:
+- nodejs
+extensions:
+contentType: samples
+createdDate: "07-07-2021 13:38:26"
+---
+
+# Change Notification sample
 
 Bot Framework v4 ChangeNotification sample.
 
@@ -68,6 +82,8 @@ h. For Resource URL, enter https://graph.microsoft.com/
 i. Provide  Scopes like "Presence.Read, Presence.Read.All"
 ![image](https://user-images.githubusercontent.com/85864414/121880473-af1af780-cd2b-11eb-8166-837425ef186f.PNG)
 
+- Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
+
 ### Update the appsetting
 1. Update `MicrosoftAppId` and `MicrosoftAppPassword` in the .env that is created in Azure.
 2. Add `connectionName` created in step 5.
@@ -92,3 +108,4 @@ i. Provide  Scopes like "Presence.Read, Presence.Read.All"
 - [App in Catalog](https://docs.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0)
 - [Bot Framework Documentation](https://docs.botframework.com)
 - [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
+
