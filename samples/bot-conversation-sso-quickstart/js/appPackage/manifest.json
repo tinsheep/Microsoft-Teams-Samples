@@ -1,8 +1,8 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
     "manifestVersion": "1.8",
-    "version": "1.0.0",
-    "id": "{TODO: MicrosoftAppId}",
+    "version": "1.0.1",
+    "id": "d0ddabc2-c99c-4508-90b8-e46ddfc8616f",
     "packageName": "com.microsoft.teams.extension",
     "developer": {
         "name": "Teams App, Inc.",
@@ -15,8 +15,8 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "Conversation Bot",
-        "full": "Conversation Bot"
+        "short": "Node Conversation Bot",
+        "full": "Node Conversation Bot"
     },
     "description": {
         "short": "Short description for Conversation Bot.",
@@ -25,7 +25,7 @@
     "accentColor": "#FFFFFF",
     "bots": [
         {
-            "botId": "{TODO: MicrosoftAppId}",
+            "botId": "d0ddabc2-c99c-4508-90b8-e46ddfc8616f",
             "scopes": [
                 "personal"
             ],
@@ -42,7 +42,7 @@
         "*.ngrok.io"
     ],
     "webApplicationInfo": {
-        "id": "{TODO: MicrosoftAppId}",
-        "resource": "api://botid-{TODO: MicrosoftAppId}"
+        "id": "d0ddabc2-c99c-4508-90b8-e46ddfc8616f",
+        "resource": "api://botid-d0ddabc2-c99c-4508-90b8-e46ddfc8616f"
     }
 }

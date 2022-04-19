@@ -6,9 +6,9 @@
   "packageName": "com.microsoft.teams.extension",
   "developer": {
     "name": "Teams App, Inc.",
-    "websiteUrl": "https://<<BASE-URL>>",
-    "privacyUrl": "https://<<BASE-URL>>/privacy",
-    "termsOfUseUrl": "https://<<BASE-URL>>/termsofuse"
+    "websiteUrl": "https://myteamsdev.ngrok.io",
+    "privacyUrl": "https://myteamsdev.ngrok.io/privacy",
+    "termsOfUseUrl": "https://myteamsdev.ngrok.io/termsofuse"
   },
   "icons": {
     "color": "color.png",
@@ -27,8 +27,8 @@
     {
       "entityId": "index",
       "name": "Device permission tab",
-      "contentUrl": "https://<<BASE-URL>>/tab",
-      "websiteUrl": "https://<<BASE-URL>>/tab",
+      "contentUrl": "https://myteamsdev.ngrok.io/tab",
+      "websiteUrl": "https://myteamsdev.ngrok.io/tab",
       "scopes": [
         "personal"
       ]

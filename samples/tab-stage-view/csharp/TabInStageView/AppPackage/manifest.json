@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
   "manifestVersion": "1.10",
   "version": "1.0.1",
-  "id": "<<MANIFEST-ID>>",
+  "id": "d1da0e77-af51-4a55-9bf1-64a89101aa0e",
   "packageName": "com.microsoft.teams.tabstageview",
   "developer": {
     "name": "Microsoft",
@@ -33,14 +33,14 @@
         "channelTab"
       ],
       "name": "Stage View",
-      "contentUrl": "<<BASE-URL>>/sampleTab",
-      "websiteUrl": "<<BASE-URL>>/sampleTab",
-      "searchUrl": "<<BASE-URL>>/sampleTab"
+      "contentUrl": "https://myteamsdev.ngrok.io/sampleTab",
+      "websiteUrl": "https://myteamsdev.ngrok.io/sampleTab",
+      "searchUrl": "https://myteamsdev.ngrok.io/sampleTab"
     }
   ],
   "bots": [
     {
-      "botId": "{{BOT-ID}}",
+      "botId": "d1da0e77-af51-4a55-9bf1-64a89101aa0e",
       "scopes": [
         "team",
         "personal",
@@ -52,7 +52,7 @@
   "accentColor": "#60A18E",
   "permissions": [ "identity", "messageTeamMembers" ],
   "validDomains": [
-    "<<VALID DOMAIN>>",
+    "myteamsdev.ngrok.io",
     "token.botframework.com"
   ]
 }

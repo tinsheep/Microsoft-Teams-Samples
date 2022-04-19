@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "manifestVersion": "1.8",
   "version": "1.0.0",
-  "id": "{{Microsoft-App-Id}}",
+  "id": "c3fcbeb1-ae6b-4d2d-9fee-1b0af1a32228",
   "packageName": "com.microsoft.teams.mgtteamstab",
   "developer": {
     "name": "Microsoft",
@@ -27,8 +27,8 @@
     {
       "entityId": "index",
       "name": "Personal Tab",
-      "contentUrl": "{{base-URl}}/tab",
-      "websiteUrl": "{{base-URl}}/tab",
+      "contentUrl": "https://myteamsdev.ngrok.io/tab",
+      "websiteUrl": "https://myteamsdev.ngrok.io/tab",
       "scopes": [
         "personal"
       ]
@@ -39,6 +39,6 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "{{domain-name}}"
+    "myteamsdev.ngrok.io"
   ]
 }

@@ -49,6 +49,10 @@ const Tab = () => {
             content={<CaptureAudio />}
           />
           <Segment
+          /* Component to capture video in browser */
+          content={<CaptureVideoDesktop />}
+        />
+          <Segment
             /* Component to scan barcode */
             content={<ScanBarCode />}
           />

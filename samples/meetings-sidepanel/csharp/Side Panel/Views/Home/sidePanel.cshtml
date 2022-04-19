@@ -35,6 +35,10 @@
                 userId = context.userObjectId;
                 var meetingId = context.meetingId;
                 var tenantId = context.tid;
+                // mp: test the frame context - am i in the side panel or meeting stage?
+                var frameContext = context.frameContext;
+                alert("Frame Context: " + frameContext);
+                // ************************************
                 $.ajax({
                     type: 'GET',
                     url: '/Home/IsOrganizer',

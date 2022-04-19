@@ -13,6 +13,7 @@ namespace MeetingEvents.Bots
     using Microsoft.Bot.Builder.Teams;
     using Microsoft.Bot.Schema;
     using Microsoft.Bot.Schema.Teams;
+    using Newtonsoft.Json.Linq;
 
     public class ActivityBot : TeamsActivityHandler
     {
@@ -23,6 +24,7 @@ namespace MeetingEvents.Bots
         {
             _conversationState = conversationState;
         }
+
 
         /// <summary>
         /// Activity Handler for Meeting start event
