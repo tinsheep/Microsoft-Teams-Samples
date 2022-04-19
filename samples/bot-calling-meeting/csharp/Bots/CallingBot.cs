@@ -193,6 +193,19 @@ namespace CallingBotSample.Bots
                         }
                     }
                     break;
+                case "invitepstnparticipant":
+                    var themeeting = await graph.CreateOnlineMeetingAsync();
+                    if (themeeting != null)
+                    {
+                        var statefullCall = await graph.JoinScheduledMeeting(themeeting.JoinWebUrl);
+                        if (statefullCall != null)
+                        {
+
+                            graph.InvitePSTNParticipant(statefullCall.Id);
+                            await turnContext.SendActivityAsync("Invited PSTN participant successfuly");
+                        }
+                    }
+                    break;
                 default:
                     await turnContext.SendActivityAsync("Welcome to bot");
                     break;

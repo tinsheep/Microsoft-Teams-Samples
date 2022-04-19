@@ -42,5 +42,11 @@ namespace CallingBotSample.Interfaces
         /// <returns>JoinScheduledMeeting.</returns>
         void InviteParticipant(string meetingId);
 
+        /// <summary>
+        /// Invite Participant to Meeting.
+        /// </summary>
+        /// <returns>JoinScheduledMeeting.</returns>
+        void InvitePSTNParticipant(string meetingId);
+
     }
 }

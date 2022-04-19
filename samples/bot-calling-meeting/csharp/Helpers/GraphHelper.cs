@@ -213,5 +213,42 @@ namespace CallingBotSample.Helpers
             });
         }
 
+        public void InvitePSTNParticipant(string meetingId)
+        {
+            _ = Task.Run(async () =>
+            {
+                await Task.Delay(10000);
+
+                try
+                {
+                    var participants = new List<InvitationParticipantInfo>()
+                {
+                    new InvitationParticipantInfo
+                    {
+                        Identity = new IdentitySet
+                        {
+                            AdditionalData = new Dictionary<string, object>()
+                            {
+                                {"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+14252134751\"}"}
+                            }
+                        }
+                    }
+                };
+
+                var clientContext = "27fd0147-cf29-4462-a434-c62f18519775";
+
+
+                    var statefulCall = await graphServiceClient.Communications.Calls[meetingId].Participants
+                       .Invite(participants, clientContext)
+                       .Request()
+                       .PostAsync();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            });
+        }
+
     }
 }

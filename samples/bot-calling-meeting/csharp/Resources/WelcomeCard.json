@@ -47,6 +47,14 @@
       "data": {
         "type": "inviteparticipant"
       }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Invite PSTN Participant to meeting",
+      "id": "invitepstnparticipant",
+      "data": {
+        "type": "invitepstnparticipant"
+      }
     }
   ]
 }

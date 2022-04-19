@@ -2,7 +2,7 @@
   "$schema": "https://github.com/OfficeDev/microsoft-teams-app-schema/blob/preview/DevPreview/MicrosoftTeams.schema.json",
   "manifestVersion": "devPreview",
   "version": "1.0.0",
-  "id": "<<app-id>>",
+  "id": "27fd0147-cf29-4462-a434-c62f18519775",
   "packageName": "com.acs.sample",
   "developer": {
     "name": "Contoso",
@@ -25,7 +25,7 @@
   "accentColor": "#FFFFFF",
   "bots": [
     {
-      "botId": "<<bot-id>>",
+      "botId": "27fd0147-cf29-4462-a434-c62f18519775",
       "scopes": [ "personal", "team", "groupchat" ],
       "supportsFiles": false,
       "isNotificationOnly": false,
