@@ -31,7 +31,7 @@ namespace CallingBotSample.Helpers
         private readonly ILogger<GraphHelper> logger;
         private readonly IConfiguration configuration;
         private readonly IEnumerable<Configuration.User> users;
-        private readonly IGraphServiceClient graphServiceClient;
+        private readonly GraphServiceClient graphServiceClient;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GraphHelper"/> class.
@@ -39,7 +39,7 @@ namespace CallingBotSample.Helpers
         /// <param name="httpClientFactory">IHttpClientFactory instance.</param>
         /// <param name="logger">ILogger instance.</param>
         /// <param name="configuration">IConfiguration instance.</param>
-        public GraphHelper(ILogger<GraphHelper> logger, IConfiguration configuration, IOptions<Configuration.Users> users, IGraphServiceClient graphServiceClient)
+        public GraphHelper(ILogger<GraphHelper> logger, IConfiguration configuration, IOptions<Configuration.Users> users, GraphServiceClient graphServiceClient)
         {
             this.logger = logger;
             this.configuration = configuration;
@@ -229,7 +229,7 @@ namespace CallingBotSample.Helpers
                         {
                             AdditionalData = new Dictionary<string, object>()
                             {
-                                {"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+14252134751\"}"}
+                                {"phone", new Identity() { DisplayName = this.users.ElementAt(3).DisplayName, Id = this.users.ElementAt(3).Id} }
                             }
                         }
                     }

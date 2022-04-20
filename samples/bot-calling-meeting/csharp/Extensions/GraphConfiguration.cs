@@ -39,7 +39,7 @@ namespace CallingBotSample.Extensions
 
             ClientCredentialProvider authenticationProvider = new ClientCredentialProvider(confidentialClientApplication);
 
-            services.AddScoped<IGraphServiceClient, GraphServiceClient>(sp =>
+            services.AddScoped<GraphServiceClient, GraphServiceClient>(sp =>
             {
                 return new GraphServiceClient(authenticationProvider);
             });

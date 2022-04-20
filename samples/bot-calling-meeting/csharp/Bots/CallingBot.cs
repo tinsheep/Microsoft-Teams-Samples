@@ -37,12 +37,12 @@ namespace CallingBotSample.Bots
 
         private readonly ICard card;
         private readonly IGraph graph;
-        private readonly IGraphServiceClient graphServiceClient;
+        private readonly GraphServiceClient graphServiceClient;
 
 
 
 
-        public CallingBot(BotOptions options, IConfiguration configuration, ICard card, IGraph graph, IGraphServiceClient graphServiceClient, IGraphLogger graphLogger)
+        public CallingBot(BotOptions options, IConfiguration configuration, ICard card, IGraph graph, GraphServiceClient graphServiceClient, IGraphLogger graphLogger)
         {
             this.options = options;
             this.configuration = configuration;
