@@ -11,6 +11,8 @@ using Newtonsoft.Json.Linq;
 using SidePanel.Controllers;
 using SidePanel.Models;
 using AdaptiveCards;
+using Microsoft.Bot.Schema.Teams;
+using Newtonsoft.Json;
 
 namespace Microsoft.BotBuilderSamples.Bots
 {
@@ -51,6 +53,12 @@ namespace Microsoft.BotBuilderSamples.Bots
             // Create a very simple adaptive card with meeting information
             var attachmentCard = CreateMeetingStartOrEndEventAttachment(meetingEventName, meetingEventInfoObject);
             await turnContext.SendActivityAsync(MessageFactory.Attachment(attachmentCard));
+        }
+
+        protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meeting, ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
+        {
+            await turnContext.SendActivityAsync(JsonConvert.SerializeObject(meeting));
+
         }
 
         private Attachment CreateMeetingStartOrEndEventAttachment(string meetingEventName, MeetingStartEndEventValue meetingEventInfoObject)
