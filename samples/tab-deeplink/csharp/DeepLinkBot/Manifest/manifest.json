@@ -1,6 +1,6 @@
 ﻿{
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.12",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
   "version": "1.0.0",
   "id": "<<YOUR-MICROSOFT-APP-ID>>",
   "packageName": "com.microsoft.deeplinkbot",
@@ -25,18 +25,26 @@
   "accentColor": "#60A18E",
   "configurableTabs": [
     {
-      "configurationUrl": "https://<<BASE-URL>>/Configure",
+      "configurationUrl": "https://{{domain-name}}/Configure",
       "canUpdateConfiguration": true,
       "scopes": [
         "groupchat",
         "team"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingSidePanel",
+        "meetingStage",
+        "meetingChatTab",
+        "meetingDetailsTab"
       ]
     }
   ],
   "staticTabs": [
     {
-      "contentUrl": "https://<<BASE-URL>>/DeepLink",
-      "websiteUrl": "https://<<BASE-URL>>",
+      "contentUrl": "https://{{domain-name}}/DeepLink",
+      "websiteUrl": "https://{{domain-name}}",
       "entityId": "com.contoso.DeeplLinkBot.help",
       "name": "Deep Link Tab",
       "scopes": [
@@ -62,6 +70,21 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "*.ngrok.io"
-  ]
+    "*.ngrok.io",
+    "{{domain-name}}"
+  ],
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "MeetingStage.Write.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "ChannelMeetingStage.Write.Group",
+          "type": "Delegated"
+        }
+      ]
+    }
+  }
 }

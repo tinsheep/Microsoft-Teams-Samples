@@ -19,7 +19,7 @@ const Home = props => {
         var taskDescription = document.querySelector(".task-description")
         var userName = document.querySelector(".user-name")
         var isValid = true;
-        
+
         $('.task-description,.user-name').each(function (e) {
             if ($.trim($(this).val()) == '') {
                 isValid = false;
@@ -51,13 +51,13 @@ const Home = props => {
     }
 
     return (
-        <form className="chat-form" onSubmit={(event) => {return sendTaskDetails(event)}}>
+        <form className="chat-form" onSubmit={(event) => { return sendTaskDetails(event) }}>
             <div className="chat-label">
                 Assigned To:
                 <input type="text" className="user-name" />
             </div>
             <div className="chat-label">
-                Description:
+                Description:&nbsp;
                 <input type="text" className="task-description" />
             </div>
             <input type="submit" id="addDetails" value="Add" />

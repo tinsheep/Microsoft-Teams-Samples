@@ -1,5 +1,7 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+﻿// <copyright file="DeepLinkBot.cs" company="Microsoft">
+// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
+// </copyright>
 
 using System;
 using System.Collections.Generic;
@@ -20,7 +22,7 @@ namespace Microsoft.BotBuilderSamples.Bots
             _configuration = configuration;
         }
 
-        public static string channelID = "";
+        public static string channelID = "<AddYourTeamsChannelId>";
         public string teamsUrl = "https://teams.microsoft.com/l/entity/";
         public string tabUrlTask1;
         public string tabUrlTask2;
@@ -58,10 +60,10 @@ namespace Microsoft.BotBuilderSamples.Bots
             }
             else
             {
-                tabUrlTask1 = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["MicrosoftAppId"], _configuration["TabEntityId"], "topic1");
-                tabUrlTask2 = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["MicrosoftAppId"], _configuration["TabEntityId"], "topic2");
-                tabUrlTask3 = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["MicrosoftAppId"], _configuration["TabEntityId"], "topic3");
-                extendedDeepLink = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["MicrosoftAppId"], _configuration["TabEntityId"], "");
+                tabUrlTask1 = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["ManifestAppId"], _configuration["TabEntityId"], "topic1");
+                tabUrlTask2 = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["ManifestAppId"], _configuration["TabEntityId"], "topic2");
+                tabUrlTask3 = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["ManifestAppId"], _configuration["TabEntityId"], "topic3");
+                extendedDeepLink = deeplinkHelper.GetDeepLinkToTabTask(teamsUrl, _configuration["ManifestAppId"], _configuration["TabEntityId"], "");
             }
 
             var DeepLinkCard = new AdaptiveCard(new AdaptiveSchemaVersion("1.0"))

@@ -3,21 +3,39 @@
     "name": "officedev-microsoft-teams-samples-app-auth-nodejs",
     "source": "officeDev",
     "title": "Microsoft Teams Authentication Sample",
-    "shortDescription": "This sample demonstrates authentication in Microsoft Teams apps.",
+    "shortDescription": "This sample demonstrates authentication in Microsoft Teams using bot and tab.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-auth/nodejs",
     "longDescription": [
-      "This sample demonstrates authentication in Microsoft Teams apps."
+      "This sample demonstrates authentication in Microsoft Teams using bot and tab."
     ],
     "creationDateTime": "2018-02-08",
     "updateDateTime": "2022-06-20",
     "products": [
       "Teams"
     ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "OfficeDev"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab,bot"
+      }
+    ],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://raw.githubusercontent.com/OfficeDev/Microsoft-Teams-Samples/main/samples/app-auth/nodejs/Images/TabAzureADLoginV1.png",
+        "url": "https://raw.githubusercontent.com/OfficeDev/Microsoft-Teams-Samples/main/samples/app-auth/nodejs/Images/app-auth.gif",
         "alt": "Solution UX as Teams tab showing authentication details"
       }
     ],

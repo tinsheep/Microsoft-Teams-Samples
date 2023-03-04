@@ -1,6 +1,6 @@
 ---
 page_type: sample
-description: This is a sample application which demonstrates how to use CART link to send live captions in the meeting.
+description: This is a sample application which demonstrates how to use CART link to send live captions in the meeting tabs.
 products:
 - office-teams
 - office
@@ -9,8 +9,9 @@ languages:
 - nodejs
 - javascript
 extensions:
-contentType: samples
-createdDate: "24-06-2022 00:15:15"
+ contentType: samples
+ createdDate: "06/24/2022 12:00:00 AM"
+urlFragment: officedev-microsoft-teams-samples-meetings-live-caption-nodejs
 ---
 
 # Meeting side panel application uses CART link to send caption in live meeting.

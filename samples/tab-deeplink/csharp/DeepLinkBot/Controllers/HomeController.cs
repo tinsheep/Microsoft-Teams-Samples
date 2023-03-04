@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿// <copyright file="HomeController.cs" company="Microsoft">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.BotBuilderSamples.Bots;
@@ -98,7 +103,7 @@ namespace Microsoft.BotBuilderSamples.Controllers
                 channelDeeplinks.Add(task2ChannelLink);
                 channelDeeplinks.Add(task3ChannelLink);
             }
-
+            ViewBag.AppId = _configuration["MicrosoftAppId"];
             return View(channelDeeplinks);
         }
 

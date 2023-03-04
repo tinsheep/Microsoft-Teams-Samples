@@ -62,7 +62,10 @@ adapter.onTurnError = async (context, error) => {
     `${error}`,
     'https://www.botframework.com/schemas/error',
     'TurnError'
-  );
+   );
+
+  // Uncomment below commented line for local debugging.
+  // await context.sendActivity(`Sorry, it looks like something went wrong. Exception Caught: ${error}`);
 
   // Note: Since this Messaging Extension does not have the messageTeamMembers permission
   // in the manifest, the bot will not be allowed to message users.
@@ -111,7 +114,7 @@ server.get('/auth-start', function (req, res) {
 // End of the pop-up dialog auth flow, returns the results back to parent window
 server.get('/auth-end', function (req, res) {
   var clientId = process.env.MicrosoftAppId;
-  res.render('./views/auth-end', { clientId: clientId });
+  res.render('./views/auth-end', { clientId: JSON.stringify(clientId) });
 });
 
 // Endpoint to facebook auth redirect page.
