@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "id": "8131e3ba-0f19-411e-adad-527960c2fa89",
   "packageName": "com.microsoft.teams.sample.meetingtoken",
 
@@ -33,9 +33,7 @@
       ],
       "context": [
         "meetingSidePanel",
-        "meetingStage",
-        "meetingChatTab",
-        "meetingDetailsTab"
+        "meetingStage"
       ]
     }
   ],
@@ -50,6 +48,9 @@
       "supportsFiles": false
     }
   ],
+  "meetingExtensionDefinition": {
+    "supportsAnonymousGuestUsers": true
+  },
   "permissions": [
     "identity",
     "messageTeamMembers"
@@ -63,22 +64,9 @@
   },
   "authorization": {
     "permissions": {
-      "orgWide": [],
       "resourceSpecific": [
         {
           "name": "MeetingStage.Write.Chat",
-          "type": "Delegated"
-        },
-        {
-          "name": "ChannelMeetingStage.Write.Group",
-          "type": "Delegated"
-        },
-        {
-          "name": "LiveShareSession.ReadWrite.Chat",
-          "type": "Delegated"
-        },
-        {
-          "name": "LiveShareSession.ReadWrite.Group",
           "type": "Delegated"
         },
         {
@@ -87,8 +75,5 @@
         }
       ]
     }
-  },
-  "meetingExtensionDefinition": {
-    "supportsAnonymousGuestUsers": true
   }
 }
