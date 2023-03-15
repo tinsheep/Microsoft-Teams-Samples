@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
   "manifestVersion": "1.16",
   "version": "1.0.0",
-  "id": "{{Microsoft-App-id}}",
+  "id": "48726a72-891f-4dfb-840f-42117bebf631",
   "packageName": "com.teams.sample.appAnonymousUsers",
   "developer": {
     "name": "appAnonymousUsers",
@@ -25,7 +25,7 @@
   "accentColor": "#FFFFFF",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{{domain-name}}/configure",
+      "configurationUrl": "https://myteamsdev.ngrok.io/configure",
       "canUpdateConfiguration": true,
       "scopes": [
         "team",
@@ -39,7 +39,7 @@
   ],
   "bots": [
     {
-      "botId": "{{Microsoft-App-id}}",
+      "botId": "48726a72-891f-4dfb-840f-42117bebf631",
       "scopes": [
         "groupChat",
         "team"
@@ -76,11 +76,11 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "{{domain-name}}"
+    "mytemsdev.ngrok.io"
   ],
   "webApplicationInfo": {
-    "id": "{{Microsoft-App-id}}",
-    "resource": "api://{{domain-name}}/botid-{{Microsoft-App-id}}"
+    "id": "48726a72-891f-4dfb-840f-42117bebf631",
+    "resource": "api://myteamsdev.ngrok.io/botid-48726a72-891f-4dfb-840f-42117bebf631"
   },
   "authorization": {
     "permissions": {
